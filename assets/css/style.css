@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Work-Sans;
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+img {
+  width: 100%;
+}
+
+.blackbg {
+  background-color: black;
+  color: White;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 3.8rem;
+}
+
+h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 8rem;
+  margin-bottom: 10rem;
+}
+
+p {
+  font-family: Work-Sans;
+  font-size: 0.8rem;
+  line-height: 4rem;
+}
+
+p span {
+  font-size: 6rem;
+  font-family: Lora;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  text-decoration: none;
+  color: inherit;
+  width: 5rem;
+  height: 2rem;
+  font-family: Work-Sans;
+  color: inherit;
+}
+
+.btn:hover {
+  background-color: white;
+  transition: 0.5s;
+  color: black;
+}
+
+/* =========Header======== */
+
+header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* =========Main======== */
+
+.container {
+  padding: 0 5rem 3rem;
+}
+
+.content {
+  font-family: Lora;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.article-container {
+  width: 40vw;
+}
+
+h2 span {
+  font-size: 1rem;
+}
+
+.div1 {
+  max-width: 45vw;
+}
+
+.div2 {
+  max-width: 25vw;
+}
+
+.bears {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poppybear {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poppybear span {
+  font-family: Work-Sans;
+}
+
+.rotating-logo {
+  width: 30vw;
+  align-content: right;
+}
+
+/* =========Footer======== */
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p:nth-of-type(2) {
+  font-family: Lora;
+  font-size: 1.5rem;
+  width: 30vw;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+footer div img {
+  width: 1.5vw;
+  margin: 5rem 0.2rem 0 0;
+}
+
+.banner {
+  background-color: white;
+  color: black;
+  font-size: 7rem;
+}
+
+.rotation {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.banner span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
