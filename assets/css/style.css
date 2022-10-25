@@ -111,16 +111,117 @@ h1 span {
   width: 40vw;
 }
 
+.map-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map-image {
+  height: 100vh;
+  margin-top: -250px;
+}
+
+.position {
+  position: relative;
+  z-index: 100;
+}
+
+.center-position {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action1 {
+  width: 20vw;
+  position: relative;
+  top: -20rem;
+  left: 60rem;
+}
+.action2 {
+  width: 15vw;
+  position: relative;
+  top: 0.5rem;
+  left: -15rem;
+}
+.action3 {
+  width: 15vw;
+  position: relative;
+  bottom: -10rem;
+}
+.action4 {
+  width: 20vw;
+  position: relative;
+  left: 20rem;
+  top: -20rem;
+}
+.action5 {
+  width: 20vw;
+  position: relative;
+  left: 40rem;
+  top: -10rem;
+}
+.action6 {
+  width: 15vw;
+  position: relative;
+  left: -35rem;
+}
+.action7 {
+  width: 15vw;
+  position: relative;
+  left: -15rem;
+  bottom: -22rem;
+}
+
 h2 span {
   font-size: 1rem;
 }
 
-.div1 {
-  max-width: 45vw;
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.div2 {
-  max-width: 25vw;
+.left {
+  width: 500px;
+  height: 600px;
+  background: url(../img/goldenbear.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  background: url(../img/gb2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 350px;
+  z-index: 10;
+  margin-left: -90px;
+}
+.left2 {
+  width: 300px;
+  height: 350px;
+  background: url(../img/pb3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+  margin-right: -90px;
+}
+
+.right2 {
+  background: url(../img/rosebear.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 600px;
 }
 
 .bears {
@@ -141,7 +242,34 @@ h2 span {
 
 .rotating-logo {
   width: 30vw;
-  align-content: right;
+  margin-right: -250px;
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.logo-flex {
+  display: flex;
+  justify-content: end;
+  margin: -120px 0px;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 /* =========Footer======== */
@@ -165,17 +293,63 @@ footer div img {
 }
 
 .banner {
-  background-color: white;
   color: black;
   font-size: 7rem;
+  font-family: Lora;
+  white-space: nowrap;
+  padding: 2rem;
+  animation: translate 5s linear infinite;
 }
 
 .rotation {
   transform: rotate(45deg);
-  position: absolute;
+  background-color: white;
+  overflow: hidden;
 }
 
 .banner span {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
+}
+
+.footer-img {
+  width: 6.5vw;
+  margin: 5rem 0.2rem 0 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-top: 10rem;
+}
+
+footer {
+  width: 100vw;
+  overflow: hidden;
+}
+
+@-webkit-keyframes translate {
+  0% {
+    -webkit-transform: translate(-100px);
+  }
+  100% {
+    -webkit-transform: translate(100px);
+  }
+}
+@-moz-keyframes translate {
+  0% {
+    -webkit-transform: translate(-100px);
+  }
+  100% {
+    -webkit-transform: translate(100%);
+  }
+}
+@keyframes translate {
+  0% {
+    -webkit-transform: translate(-700px);
+  }
+  100% {
+    -webkit-transform: translate(100%);
+  }
 }
